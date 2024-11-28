@@ -1,0 +1,35 @@
+{% extends 'listaempleados/base.html'%}
+
+{% block content %}
+<!-- Content -->
+<div class="content">
+    <h2>Listar Trabajadores</h2>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Sexo</th>
+                    <th>Cargo</th>
+                    <th>RUT</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Ejemplo de fila de trabajador -->
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>Masculino</td>
+                    <td>Trabajador Común</td>
+                    <td>12345678-9</td>
+                    <td>
+                        <button class="btn btn-modificar">Modificar</button>
+                        <button class="btn btn-eliminar">Eliminar</button>
+                    </td>
+                </tr>
+                <!-- Más filas de trabajadores -->
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}
